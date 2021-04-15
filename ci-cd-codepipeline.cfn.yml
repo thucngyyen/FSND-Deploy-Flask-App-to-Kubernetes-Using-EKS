@@ -12,7 +12,7 @@ Parameters:
     Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter the EKS cluster name
+    ConstraintDescription: simple-jwt-api #You must enter the EKS cluster name
 
   GitSourceRepo:
     Type: String
@@ -32,6 +32,7 @@ Parameters:
 
   GitHubToken:
     Type: String
+    Default: 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
     NoEcho: true
     Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
     MinLength: 3
@@ -40,7 +41,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: thucngyyen
     Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
